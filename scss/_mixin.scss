@@ -1,0 +1,44 @@
+/*CONVERTE PX PARA REM*/
+@function rem($pixel, $contexto: 16) {
+	@return $pixel / $contexto + rem;
+}
+
+//GERAR O CSS DO TEMA
+@mixin theme($color, $background, $border, $tipo, $hover, $color_hover){
+
+	%type-defult {
+		font-family: $tipo;
+		color: $color;
+		font-weight: bold;
+	}
+	
+	.header {
+		border: 3px solid $color;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $background;
+	
+		h1 {
+			margin: rem(10);
+			@extend %type-defult;
+		}
+
+		.navmenu{
+			a{
+				font-size: rem(24);
+				text-transform: uppercase;
+				margin-right: rem(40);
+				@extend %type-defult;
+				padding: 5px 10px;
+				text-decoration: none;
+				
+				&:hover{
+					background-color: $hover;
+					color: $color_hover;
+				}
+				
+			}
+		}
+	}
+}

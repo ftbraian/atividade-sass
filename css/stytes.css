@@ -1,0 +1,33 @@
+/*CORES*/
+/*FONTES*/
+/*CONVERTE PX PARA REM*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.header h1, .header .navmenu a {
+  font-family: "Arial", sans-serif;
+  color: #49213E;
+  font-weight: bold; }
+
+.header {
+  border: 3px solid #49213E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF; }
+  .header h1 {
+    margin: 0.625rem; }
+  .header .navmenu a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    padding: 5px 10px;
+    text-decoration: none; }
+    .header .navmenu a:hover {
+      background-color: #49213E;
+      color: #FFF; }

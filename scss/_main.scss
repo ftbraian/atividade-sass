@@ -1,0 +1,14 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+@include theme($roxo, $branco, $roxo, $tipo1, $roxo, $branco);
+//@include theme($verde, $cinza-escuro, $verde, $tipo3, $verde, $branco );
+//@include theme($laranja, $cinza, $laranja, $tipo2, $laranja, $branco);
